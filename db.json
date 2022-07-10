@@ -1,4 +1,13 @@
 {
+  "users": [
+    {
+      "email": "val.mai@gmail.com",
+      "password": "$2a$10$bbJuEgqtxj92Q7VMjjkKtOmRUbFjiNEVkIdpVfAADt85nflA5UDFG",
+      "firstname": "Valerio",
+      "lastname": "Maiolini",
+      "id": 1
+    }
+  ],
   "students": [
     {
       "studentName": "Antonio",
@@ -28,26 +37,8 @@
       "id": 3
     },
     {
-      "studentName": "Francesco ",
-      "studentLast": "Rossi",
-      "studentMail": "fra.red@hotmail.it",
-      "studentCity": "Roma",
-      "studentDOB": "1994-06-14T22:00:00.000Z",
-      "studentCourse": "FS",
-      "id": 4
-    },
-    {
-      "studentName": "Alessia",
-      "studentLast": "Verdi",
-      "studentMail": "aleverdi@gmail.com",
-      "studentCity": "Torino",
-      "studentDOB": "1997-08-04T22:00:00.000Z",
-      "studentCourse": "CS",
-      "id": 5
-    },
-    {
       "studentName": "Rossella",
-      "studentLast": "Forti",
+      "studentLast": "Forte",
       "studentMail": "forti_ross@mail.com",
       "studentCity": "Bologna",
       "studentDOB": "1988-02-22T23:00:00.000Z",
@@ -64,13 +55,67 @@
       "id": 7
     },
     {
+      "studentName": "Francesco",
+      "studentLast": "Rossi",
+      "studentMail": "fra_red@mail.it",
+      "studentCity": "Roma",
+      "studentDOB": "2022-04-10T22:00:00.000Z",
+      "studentCourse": "CS",
+      "id": 8
+    },
+    {
+      "studentName": "Miriam",
+      "studentLast": "Coco",
+      "studentMail": "miri@mail.it",
+      "studentCity": "Roma",
+      "studentDOB": "1993-04-11T22:00:00.000Z",
+      "studentCourse": "BE",
+      "id": 9
+    },
+    {
+      "studentName": "Alberto",
+      "studentLast": "Maggio",
+      "studentMail": "alberto.maggio@gmail.com",
+      "studentCity": "Torino",
+      "studentDOB": "1998-11-15T23:00:00.000Z",
+      "studentCourse": "FS",
+      "id": 10
+    },
+    {
+      "studentName": "Jasmine",
+      "studentLast": "Alberti",
+      "studentMail": "albjas@mail.com",
+      "studentCity": "Bologna",
+      "studentDOB": "1989-05-19T22:00:00.000Z",
+      "studentCourse": "FE",
+      "id": 11
+    },
+    {
+      "studentName": "Massimo",
+      "studentLast": "Guerra",
+      "studentMail": "max_guerra@hotmail.it",
+      "studentCity": "Pescara",
+      "studentDOB": "2000-06-19T22:00:00.000Z",
+      "studentCourse": "FS",
+      "id": 12
+    },
+    {
       "studentName": "Valerio",
       "studentLast": "Maiolini",
-      "studentMail": "val.mai@mail.it",
-      "studentCity": "Roma",
-      "studentDOB": "1990-06-13T22:00:00.000Z",
-      "studentCourse": "FS",
-      "id": 8
+      "studentMail": "val.maio@gmail.com",
+      "studentCity": "L'Aquila",
+      "studentDOB": "1987-10-18T23:00:00.000Z",
+      "studentCourse": "FE",
+      "id": 13
+    },
+    {
+      "studentName": "Paola",
+      "studentLast": "Marrone",
+      "studentMail": "marr_paola@mail.it",
+      "studentCity": "Milano",
+      "studentDOB": "1996-04-21T22:00:00.000Z",
+      "studentCourse": "BE",
+      "id": 14
     }
   ]
 }

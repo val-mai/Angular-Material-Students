@@ -1,0 +1,24 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+
+  <mat-card fxFlex="35">
+
+    <mat-toolbar fxLayoutAlign="center center" color="primary" fxLayout="column">
+      <img src="../../../assets/img/logo.png" alt="">
+      <h2>Login</h2>
+    </mat-toolbar>
+
+    <form [formGroup]="loginForm" fxLayoutAlign="stretch" fxLayout="column">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input formControlName="password" type="password" matInput />
+      </mat-form-field>
+
+      <button mat-raised-button color="accent" type="submit" (click)="login()">Login</button>
+    </form>
+  </mat-card>
+</div>

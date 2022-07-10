@@ -4,7 +4,8 @@ import { DialogComponent } from 'src/app/dialog-add/dialog/dialog.component';
 import { HttpService } from 'src/app/services/http.service';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
-import { IStudent } from 'src/app/interfaces/istudent';
+import {IStudent} from 'src/app/interfaces/istudent';
+import {MatSnackBar, MatSnackBarHorizontalPosition, MatSnackBarVerticalPosition} from '@angular/material/snack-bar';
 
 @Component({
   templateUrl: './students.page.html',
@@ -14,13 +15,24 @@ export class StudentsPage implements OnInit {
 
   displayedColumns: string[] = ['id', 'studentName', 'studentLast', 'studentMail','studentCity' , 'studentCourse', 'actions'];
   dataSource!: MatTableDataSource<IStudent>;
+  horizontalPosition: MatSnackBarHorizontalPosition = 'end';
+  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(public dialog: MatDialog, private http:HttpService) {}
+  constructor(public dialog: MatDialog, private http:HttpService, private snackbar: MatSnackBar,) {}
 
   ngOnInit(): void {
     this.getAllStudents();
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.snackbar.open(message, action, {
+      panelClass: ['mat-toolbar', 'mat-primary'],
+      horizontalPosition: this.horizontalPosition,
+      verticalPosition: this.verticalPosition,
+      duration: 2500,
+    });
   }
 
   openDialog() {
@@ -54,7 +66,7 @@ export class StudentsPage implements OnInit {
     this.http.deleteStudent(id)
     .subscribe({
       next: (res) => {
-        alert('Studente rimosso con successo');
+        this.openSnackBar('Studente rimosso con successo', 'Chiudi');
         this.getAllStudents();
       }
     })
