@@ -62,6 +62,15 @@
       "studentDOB": "1981-09-16T22:00:00.000Z",
       "studentCourse": "FS",
       "id": 7
+    },
+    {
+      "studentName": "Valerio",
+      "studentLast": "Maiolini",
+      "studentMail": "val.mai@mail.it",
+      "studentCity": "Roma",
+      "studentDOB": "1990-06-13T22:00:00.000Z",
+      "studentCourse": "FS",
+      "id": 8
     }
   ]
 }
