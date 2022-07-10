@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <img routerLink="" src="../../../assets/img/logo.svg" alt="">
+  <span class="spacer"></span>
+  <span>Students</span>
+    <span class="spacer"></span>
+    <h4>Benvenuto</h4>
+    <button mat-icon-button class="icon" aria-label="User Icon button" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button routerLink="/students" mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        Gestisci Studenti
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        Logout
+      </button>
+    </mat-menu>
+</mat-toolbar>

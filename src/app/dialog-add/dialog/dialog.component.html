@@ -1,0 +1,40 @@
+<h2 mat-dialog-title>Aggiungi Studente</h2>
+<div mat-dialog-content>
+  <form [formGroup]="studentForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input formControlName="studentName" matInput />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Cognome</mat-label>
+      <input formControlName="studentLast" matInput />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input formControlName="studentMail" type="email" matInput placeholder="email@example.com" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Città</mat-label>
+      <input formControlName="studentCity" matInput />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Data di Nascita</mat-label>
+      <input formControlName="studentDOB" matInput [matDatepicker]="picker" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Corso</mat-label>
+      <mat-select formControlName="studentCourse" placeholder="">
+        <mat-option value="FE">Front-End Developer</mat-option>
+        <mat-option value="BE">Back-End Developer</mat-option>
+        <mat-option value="FS">Full-Stack Developer</mat-option>
+        <mat-option value="CS">Cyber-Security</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Chiudi</button>
+  <button mat-raised-button color="accent" (click)="addStudent()">{{setAction}}</button>
+</div>

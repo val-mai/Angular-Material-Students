@@ -1,0 +1,67 @@
+{
+  "students": [
+    {
+      "studentName": "Antonio",
+      "studentLast": "Bianchi",
+      "studentMail": "a_bianchi@mail.it",
+      "studentCity": "Roma",
+      "studentDOB": "1994-02-14T23:00:00.000Z",
+      "studentCourse": "FS",
+      "id": 1
+    },
+    {
+      "studentName": "Giuseppe",
+      "studentLast": "Verdi",
+      "studentMail": "giu.verdi@gmail.com",
+      "studentCity": "Milano",
+      "studentDOB": "1982-06-17T22:00:00.000Z",
+      "studentCourse": "CS",
+      "id": 2
+    },
+    {
+      "studentName": "Martina",
+      "studentLast": "Bevilacqua",
+      "studentMail": "marti.90@example.com",
+      "studentCity": "Firenze",
+      "studentDOB": "1990-10-07T23:00:00.000Z",
+      "studentCourse": "FE",
+      "id": 3
+    },
+    {
+      "studentName": "Francesco ",
+      "studentLast": "Rossi",
+      "studentMail": "fra.red@hotmail.it",
+      "studentCity": "Roma",
+      "studentDOB": "1994-06-14T22:00:00.000Z",
+      "studentCourse": "FS",
+      "id": 4
+    },
+    {
+      "studentName": "Alessia",
+      "studentLast": "Verdi",
+      "studentMail": "aleverdi@gmail.com",
+      "studentCity": "Torino",
+      "studentDOB": "1997-08-04T22:00:00.000Z",
+      "studentCourse": "CS",
+      "id": 5
+    },
+    {
+      "studentName": "Rossella",
+      "studentLast": "Forti",
+      "studentMail": "forti_ross@mail.com",
+      "studentCity": "Bologna",
+      "studentDOB": "1988-02-22T23:00:00.000Z",
+      "studentCourse": "FE",
+      "id": 6
+    },
+    {
+      "studentName": "Franco",
+      "studentLast": "Mare",
+      "studentMail": "maremare@mail.it",
+      "studentCity": "Roma",
+      "studentDOB": "1981-09-16T22:00:00.000Z",
+      "studentCourse": "FS",
+      "id": 7
+    }
+  ]
+}

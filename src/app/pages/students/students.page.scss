@@ -1,0 +1,42 @@
+header, header div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+p {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: auto;
+  button {
+    float: right;
+  }
+}
+
+.edit:hover {
+  color: #ffd740;
+}
+
+.delete:hover {
+  color:red;
+}
+
+
