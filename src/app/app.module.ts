@@ -20,12 +20,17 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { AuthModule } from './auth/auth.module';
 import { FooterComponent } from './footer/footer.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HomePage } from './pages/home/home.page';
+import { RouterModule } from '@angular/router';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentsPage,
-    FooterComponent
+    FooterComponent,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -34,6 +39,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatDialogModule,
     MatButtonModule,
     MatIconModule,
+    RouterModule,
     BrowserAnimationsModule,
     DialogAddModule,
     HttpClientModule,
@@ -42,7 +48,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatFormFieldModule,
     MatPaginatorModule,
     AuthModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [
     {provide: MAT_DATE_LOCALE, useValue: 'it-IT'},

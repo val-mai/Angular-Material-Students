@@ -1,9 +1,11 @@
 <div fxLayoutAlign="center center" fxFlexFill class="main-div">
-
   <mat-card fxFlex="35">
-
-    <mat-toolbar fxLayoutAlign="center center" color="primary" fxLayout="column">
-      <img src="../../../assets/img/logo.png" alt="">
+    <mat-toolbar
+      fxLayoutAlign="center center"
+      color="primary"
+      fxLayout="column"
+    >
+      <img src="../../../assets/img/logo.png" alt="" />
       <h2>Login</h2>
     </mat-toolbar>
 
@@ -18,7 +20,14 @@
         <input formControlName="password" type="password" matInput />
       </mat-form-field>
 
-      <button mat-raised-button color="accent" type="submit" (click)="login()">Login</button>
+      <button mat-raised-button color="accent" type="submit" (click)="login()">
+        Login
+      </button>
     </form>
+
+    <div class="bottom">
+      <p>Non sei registrato?</p>
+      <span (click)="register()">REGISTRATI</span>
+    </div>
   </mat-card>
 </div>

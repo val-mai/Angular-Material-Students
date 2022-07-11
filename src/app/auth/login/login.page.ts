@@ -41,12 +41,16 @@ export class LoginPage implements OnInit {
     });
   }
 
+  register() {
+    this.router.navigate(['/register']);
+  }
+
   login() {
     this.authservice.login(this.loginForm.value).
     subscribe(
       res => {
         console.log(res);
-        this.router.navigate(['/students']);
+        this.router.navigate(['/home']);
       },
       err => this.openSnackBar(err.error,'Chiudi'),
     )

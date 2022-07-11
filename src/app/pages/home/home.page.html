@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<div class="container">
+<h2>Studenti totali: <span>{{students.length}}</span></h2>
+<div class="card-container">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Front End Developer</mat-card-title>
+        <mat-card-subtitle>3 mesi</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img/frontend.png" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>Studenti iscritti: <span>{{getFE()}}</span> </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Back End Developer</mat-card-title>
+        <mat-card-subtitle>3 mesi</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img/backend.png" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>Studenti iscritti: <span>{{getBE()}}</span> </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Full Stack Developer</mat-card-title>
+        <mat-card-subtitle>6 mesi</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img/fullstack.png" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>Studenti iscritti: <span>{{getFS()}}</span> </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Cyber Security Specialist</mat-card-title>
+        <mat-card-subtitle>1 mese</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/img/cybersecurity.png" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>Studenti iscritti: <span>{{getCS()}}</span> </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

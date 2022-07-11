@@ -6,6 +6,13 @@
       "firstname": "Valerio",
       "lastname": "Maiolini",
       "id": 1
+    },
+    {
+      "email": "admin@epicode.it",
+      "password": "$2a$10$GDrO6F0HVWsBSq5Xb4Y2Gu2nln5qstaeQwLG5GZ7XWodkVZ0TEL/W",
+      "firstname": "Marco",
+      "lastname": "Rossi",
+      "id": 2
     }
   ],
   "students": [
@@ -20,8 +27,8 @@
     },
     {
       "studentName": "Giuseppe",
-      "studentLast": "Verdi",
-      "studentMail": "giu.verdi@gmail.com",
+      "studentLast": "Verde",
+      "studentMail": "giu.verde@gmail.com",
       "studentCity": "Milano",
       "studentDOB": "1982-06-17T22:00:00.000Z",
       "studentCourse": "CS",
@@ -35,15 +42,6 @@
       "studentDOB": "1990-10-07T23:00:00.000Z",
       "studentCourse": "FE",
       "id": 3
-    },
-    {
-      "studentName": "Rossella",
-      "studentLast": "Forte",
-      "studentMail": "forti_ross@mail.com",
-      "studentCity": "Bologna",
-      "studentDOB": "1988-02-22T23:00:00.000Z",
-      "studentCourse": "FE",
-      "id": 6
     },
     {
       "studentName": "Franco",
@@ -62,15 +60,6 @@
       "studentDOB": "2022-04-10T22:00:00.000Z",
       "studentCourse": "CS",
       "id": 8
-    },
-    {
-      "studentName": "Miriam",
-      "studentLast": "Coco",
-      "studentMail": "miri@mail.it",
-      "studentCity": "Roma",
-      "studentDOB": "1993-04-11T22:00:00.000Z",
-      "studentCourse": "BE",
-      "id": 9
     },
     {
       "studentName": "Alberto",
@@ -116,6 +105,24 @@
       "studentDOB": "1996-04-21T22:00:00.000Z",
       "studentCourse": "BE",
       "id": 14
+    },
+    {
+      "studentName": "Giovanna",
+      "studentLast": "Di Domenico",
+      "studentMail": "giodd@gmail.com",
+      "studentCity": "Ancona",
+      "studentDOB": "1996-04-16T22:00:00.000Z",
+      "studentCourse": "FE",
+      "id": 15
+    },
+    {
+      "studentName": "Francesca",
+      "studentLast": "Bianchi",
+      "studentMail": "fra_bianchi@hotmail.it",
+      "studentCity": "Napoli",
+      "studentDOB": "1992-01-23T23:00:00.000Z",
+      "studentCourse": "BE",
+      "id": 16
     }
   ]
 }

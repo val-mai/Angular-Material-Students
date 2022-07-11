@@ -1,18 +1,25 @@
 <mat-toolbar color="primary">
   <img routerLink="" src="../../../assets/img/default.png" alt="">
-  <span class="spacer"></span>
-  <span>Students</span>
+  <!-- <span class="spacer"></span>
+  <span>Students</span> -->
     <span class="spacer"></span>
     <h4>{{userName}}</h4>
-    <button mat-icon-button class="icon" aria-label="User Icon button" [matMenuTriggerFor]="menu">
+    <button *ngIf="!isLogged" mat-icon-button class="icon" routerLink="/login">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <button *ngIf="isLogged" mat-icon-button class="icon" [matMenuTriggerFor]="menu">
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
+      <button routerLink="/home" mat-menu-item>
+        <mat-icon>home</mat-icon>
+        Home
+      </button>
       <button routerLink="/students" mat-menu-item>
         <mat-icon>settings</mat-icon>
         Gestisci Studenti
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item (click)="logout()">
         <mat-icon>exit_to_app</mat-icon>
         Logout
       </button>
