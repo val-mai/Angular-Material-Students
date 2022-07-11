@@ -18,7 +18,7 @@ export class LoginPage implements OnInit {
 
   loginForm!: FormGroup;
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
-  verticalPosition: MatSnackBarVerticalPosition = 'top';
+  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
 
   constructor(
     private formBuilder: FormBuilder,
@@ -38,6 +38,7 @@ export class LoginPage implements OnInit {
       panelClass: ['mat-toolbar', 'mat-warn'],
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
+      duration: 2000
     });
   }
 

@@ -1,12 +1,11 @@
 footer {
-  position: fixed;
-  bottom: 1%;
   width: 100%;
   color: #1d1d1d;
   font-size: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 p {

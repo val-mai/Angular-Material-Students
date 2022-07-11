@@ -17,7 +17,7 @@ export class SignupPage implements OnInit {
 
   registerForm!: FormGroup;
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
-  verticalPosition: MatSnackBarVerticalPosition = 'top';
+  verticalPosition: MatSnackBarVerticalPosition = 'bottom';
 
   constructor(private formBuilder: FormBuilder,
     private authService:AuthService,
@@ -38,6 +38,7 @@ export class SignupPage implements OnInit {
       panelClass: ['mat-toolbar', 'mat-warn'],
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
+      duration: 2000
     });
   }
 
